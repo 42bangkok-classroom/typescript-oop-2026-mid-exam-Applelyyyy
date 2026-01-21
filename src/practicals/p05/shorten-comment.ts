@@ -1,6 +1,6 @@
 const comment = "TypeScript is a strongly typed programming language"
 
-function shortenComment(comment: string) {
+export function shortenComment(comment: string) {
   let result = ""
   const split = comment.split(" ")
   const comment_max:number = Number(split.length)
@@ -20,7 +20,3 @@ function shortenComment(comment: string) {
   }
   return result
 }
-
-
-
-console.log(shortenComment(comment))
