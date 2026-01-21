@@ -16,4 +16,5 @@ function shortenComment(comment: string): string {
   return result
 }
 
-console.log(shortenComment(comment))
+
+shortenComment(comment)

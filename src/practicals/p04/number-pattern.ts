@@ -3,18 +3,17 @@
 
 const n =Number(process.argv[2]);
 if (!isNaN(n) && n > 0 && n !== undefined) {
+  let line = '';
     for (let i = 1; i <= n; i++) {
-        let line = '';
-        // This inner loop prints spaces
         for (let s = 1; s <= n - i; s++) { 
           line += ' '; 
         }
-        // This inner loop prints number
-        for (let j = 1; j <= i; j++) {
+        for (let j = i; j > 0; j--) {
           line += j;
         }
-        console.log(line);
+        line += "\n"
       }
+      console.log(line);
 }
 
 
