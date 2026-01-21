@@ -18,5 +18,8 @@ export function shortenComment(comment: string) {
       result += ""
     }
   }
-  return result
+  return result.trim()
 }
+
+
+console.log(shortenComment("aa aaaaa aaaaaaaaaa a"))
