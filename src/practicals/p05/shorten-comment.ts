@@ -12,6 +12,3 @@ function shortenComment(comment: string) {
   }
   console.log(result)
 }
-
-
-shortenComment(comment)

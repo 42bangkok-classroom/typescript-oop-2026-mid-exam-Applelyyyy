@@ -1,9 +1,9 @@
 // Write your code below
 
-const n = Number(process.argv[2]);
+const input = Number(process.argv[2]);
 
-if (!isNaN(n) && n > 0) {
-    for (let i = 1; i <= n; i++) {
+if (!isNaN(input) && input > 0) {
+    for (let i = 1; i <= input; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             console.log("FizzBuzz");
         } else if (i % 3 === 0) {
@@ -14,5 +14,8 @@ if (!isNaN(n) && n > 0) {
             console.log(i);
         }
     }
+}
+else{
+    process.exit()
 }
 
