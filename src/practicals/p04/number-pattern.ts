@@ -11,9 +11,8 @@ if (!isNaN(n) && n > 0 && n !== undefined) {
         for (let j = i; j > 0; j--) {
           line += j;
         }
-        line += "\n"
+        console.log(line);
       }
-      console.log(line);
 }
 
 
