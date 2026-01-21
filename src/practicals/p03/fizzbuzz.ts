@@ -2,7 +2,7 @@
 
 const input = Number(process.argv[2]);
 
-if (!isNaN(input) && input > 0) {
+if (!isNaN(input) && input > 0 && input !== undefined)  {
     for (let i = 1; i <= input; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             console.log("FizzBuzz");
@@ -15,7 +15,3 @@ if (!isNaN(input) && input > 0) {
         }
     }
 }
-else{
-    process.exit()
-}
-

@@ -2,7 +2,7 @@
 
 
 const n =Number(process.argv[2]);
-if (!isNaN(n) && n >0) {
+if (!isNaN(n) && n > 0 && n !== undefined) {
     for (let i = 1; i <= n; i++) {
         let line = '';
         // This inner loop prints spaces
@@ -16,9 +16,5 @@ if (!isNaN(n) && n >0) {
         console.log(line);
       }
 }
-else{
-  process.exit()
-}
-
 
 
