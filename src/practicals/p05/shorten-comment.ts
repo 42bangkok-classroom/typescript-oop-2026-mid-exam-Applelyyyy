@@ -6,9 +6,13 @@ export function shortenComment(comment: string): string {
   const comment_max:number = Number(split.length)
   for( let i = 0; i < comment_max; i++){
     if( split[i].length <= 10 && split[i].length >= 5){
-      result += split[i]
-      result += " "
-    }
+      if(comment_max-1 === i){
+        result += ""
+      }else{        
+        result += split[i]
+        result += " "
+      }
+    } 
     else{
       result += ""
     }
